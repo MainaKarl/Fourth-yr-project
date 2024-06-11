@@ -1,5 +1,17 @@
 import os
 import subprocess
+import sys
+
+# Function to install packages from requirements.txt
+def install_requirements():
+    try:
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', 'requirements.txt'])
+    except subprocess.CalledProcessError as e:
+        print(f"Error installing requirements: {e}")
+
+# Install requirements
+install_requirements()
+
 import speech_recognition as sr
 import streamlit as st
 
