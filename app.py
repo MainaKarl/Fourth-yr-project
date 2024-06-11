@@ -1,3 +1,4 @@
+from flask import Flask, request, jsonify
 import os
 import subprocess
 import sys
@@ -16,7 +17,6 @@ def install_requirements():
 install_requirements()
 
 import time
-from flask import Flask, request, jsonify
 import speech_recognition as sr
 from moviepy.editor import VideoFileClip
 
