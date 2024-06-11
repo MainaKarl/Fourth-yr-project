@@ -3,3 +3,4 @@ SpeechRecognition
 moviepy
 imageio-ffmpeg
 Flask
+Gunicorn
