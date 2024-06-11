@@ -1,2 +1,4 @@
 streamlit
 SpeechRecognition
+moviepy
+imageio[ffmpeg]
