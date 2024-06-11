@@ -1,4 +1,4 @@
 streamlit
 SpeechRecognition
-moviepy>=1.0.3
-imageio[ffmpeg]>=2.22.0
+moviepy
+imageio-ffmpeg
