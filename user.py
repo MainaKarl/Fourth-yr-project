@@ -26,9 +26,9 @@ def transcribe_audio(audio_path):
     try:
         return recognizer.recognize_google(audio)
     except sr.UnknownValueError:
-        return "Google Speech Recognition could not understand audio"
+        return "The Speech Recognition algorithm could not understand audio"
     except sr.RequestError as e:
-        return f"Could not request results from Google Speech Recognition service; {e}"
+        return f"Could not request results from Speech Recognition service; {e}"
 
 def video_to_align(video_path, align_path):
     # Define the audio file path
